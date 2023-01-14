@@ -37,7 +37,8 @@ h2,
 h3, 
 h4, 
 h5, 
-h6 {
+h6,
+p {
     margin: 0;
 }
 ul {
@@ -60,6 +61,7 @@ img {
 .header {
     padding-bottom: 24px;
     padding-top: 24px;
+    border-bottom: 1px solid #E7E9FC;
 }
 .header-container {
     display: flex;
@@ -122,12 +124,11 @@ color: var(--second-text-color);
 
 .hero {
 background: var(--first-text-color);
-}
-.hero-container {
-    padding-top: 188px;
+ padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
 }
+
 .hero-title {
 font-size: 56px;
 line-height: 1.07;
@@ -141,11 +142,11 @@ margin-bottom: 48px;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-align-items: center;
 letter-spacing: 0.04em;
 color: #FFFFFF;
 background: var(--brand-color);
-margin-top: 48px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 padding: 16px 32px;
 display: block;
 margin: 0 auto;
@@ -158,6 +159,9 @@ background: var(--active-color);
  .section-features {
     padding-bottom: 120px;
     padding-top: 120px;
+ }
+ .features-item {
+   min-width: 264px;
  }
  .features-list {
     display: flex;
@@ -207,7 +211,6 @@ width: calc((100%-72px) / 4);
 }
 .card-content {
     padding: 32px 16px;
-
 }
 .team-list {
     display: flex;
@@ -252,18 +255,29 @@ max-width: 264px;
 
 
 /* -------PORTFOLIO-FILTERS------ */
+.section-filters {
+    padding-top: 96px;
+    padding-bottom: 72px;
 
+}
+.filters-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+align-items: center;
+}
 .filters-btn {
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-display: flex;
-align-items: center;
 text-align: center;
 letter-spacing: 0.04em;
 color: var(--brand-color);
 background: #F4F4FD;
+border: 1px solid #E7E9FC;
+border-radius: 4px;
+padding: 12px 24px;
 }
 .filters-btn:focus,
 .filters-btn:hover {
@@ -271,16 +285,33 @@ background: #F4F4FD;
     background: var(--active-color);
 }
 /* ----PORTFOLIO-CARDS----- */
-
+.section-portfolio {
+    padding-bottom: 120px;
+}
 .portfolio-subtitle {
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 color: var(--first-text-color);
+margin-bottom: 8px;
 }
 
 .portfolio-text {
 font-size: 16px;
 line-height: 1.5;
 color: var(--second-text-color);
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.card-container {
+    padding: 32px 16px;
+}
+.portfolio-item {
+    border: 1px solid #E7E9FC;
+    max-width: 360px;
+    width: calc((100%-48px) / 3);
 }
