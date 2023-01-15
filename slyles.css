@@ -55,6 +55,7 @@ ul {
 }
 img {
     display: block;
+    max-width: 100%;
 }
 
 /* --------------HEADER------------- */
@@ -161,7 +162,7 @@ background: var(--active-color);
     padding-top: 120px;
  }
  .features-item {
-   min-width: 264px;
+   flex-basis: calc(100% / 4 - 24px);
  }
  .features-list {
     display: flex;
@@ -309,9 +310,10 @@ color: var(--second-text-color);
 }
 .card-container {
     padding: 32px 16px;
+      border: 1px solid #E7E9FC;
+      border-top: 0;
 }
 .portfolio-item {
-    border: 1px solid #E7E9FC;
-    max-width: 360px;
-    width: calc((100%-48px) / 3);
+  
+    width: calc((100% - 48px) / 3);
 }
