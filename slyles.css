@@ -162,7 +162,7 @@ background: var(--active-color);
     padding-top: 120px;
  }
  .features-item {
-   flex-basis: calc(100% / 4 - 24px);
+   flex-basis: calc(100% / 3 - 3*24px);
  }
  .features-list {
     display: flex;
@@ -254,18 +254,18 @@ max-width: 264px;
     color: #F4F4FD;
 }
 
+/* ----PORTFOLIO-CARDS----- */
 
-/* -------PORTFOLIO-FILTERS------ */
-.section-filters {
+.section-potfolio {
     padding-top: 96px;
-    padding-bottom: 72px;
-
+    padding-bottom: 120px;
 }
 .filters-list {
     display: flex;
     gap: 24px;
     justify-content: center;
 align-items: center;
+margin-bottom: 72px;
 }
 .filters-btn {
 font-style: normal;
@@ -285,10 +285,7 @@ padding: 12px 24px;
     color: #FFFFFF;
     background: var(--active-color);
 }
-/* ----PORTFOLIO-CARDS----- */
-.section-portfolio {
-    padding-bottom: 120px;
-}
+
 .portfolio-subtitle {
 font-weight: 500;
 font-size: 20px;
