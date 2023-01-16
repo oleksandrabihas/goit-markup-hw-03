@@ -151,6 +151,7 @@ border-radius: 4px;
 padding: 16px 32px;
 display: block;
 margin: 0 auto;
+border: 0;
 }
 .hero-btn:focus,
 .hero-btn:hover {
